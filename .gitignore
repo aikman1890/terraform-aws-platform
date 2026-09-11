@@ -1,0 +1,36 @@
+# Local Terraform working files
+.terraform/
+.terraform.lock.hcl
+
+# tfvars often carry secrets — never commit them
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# Plan output files
+*.tfplan
+*.out
+
+# Crash logs
+crash.log
+crash.*.log
+
+# CLI config / credentials
+.terraformrc
+terraform.rc
+
+# Ignore override files (kept local by convention)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# macOS / editor noise
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Test artifacts
+.test/
